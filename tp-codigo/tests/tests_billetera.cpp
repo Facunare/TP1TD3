@@ -173,7 +173,7 @@ TEST_F(test_billetera, si_consulto_saldo_después_de_la_ultima_transaccion_devue
   Billetera* billetera2 = blockchain.abrir_billetera();
 
   agregar_transaccion(blockchain, billetera1, billetera2, 10);
-
+  cout << "**************************" << billetera1->saldo_al_fin_del_dia(Calendario::dia(3)) << endl;
   EXPECT_EQ(billetera1->saldo_al_fin_del_dia(Calendario::dia(3)), 90);
 }
 

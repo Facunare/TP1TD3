@@ -79,7 +79,8 @@ class Billetera {
     monto _saldo;
     vector<Transaccion> _relevantes;
     map<timestamp, monto> _saldos_diarios;
-    map<id_billetera, int> _transacciones_por_billetera;
+    vector<pair<int, id_billetera>> _transacciones_por_billetera;
+    vector<pair<timestamp, monto>> _saldos_diarios2;
 };
 
 #endif
