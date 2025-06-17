@@ -78,9 +78,8 @@ class Billetera {
     Blockchain* const _blockchain;
     monto _saldo;
     vector<Transaccion> _relevantes;
-    map<timestamp, monto> _saldos_diarios;
     vector<pair<int, id_billetera>> _transacciones_por_billetera;
-    vector<pair<timestamp, monto>> _saldos_diarios2;
+    vector<pair<timestamp, monto>> _saldos_diarios;
 };
 
 #endif
